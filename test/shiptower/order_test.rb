@@ -4,7 +4,7 @@ module Shiptower
   class OrderTest < Minitest::Test
     should 'create should return status 200' do
       Shiptower.token = '111'
-      Shiptower.api_base = "http://localhost:5000/api"
+      # Shiptower.api_base = "http://localhost:5000/api"
       response = Shiptower::Order.create(
                   status: 'confirmed',
                   notes: 'order 1234',
